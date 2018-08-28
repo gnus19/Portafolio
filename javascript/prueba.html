@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primer archivo HTML</title>
+  <style>
+    body{
+      background-color: #AAAAFF;
+      color: white;
+      font-family: Helvetica;
+    }
+    strong{
+      background-color: #FFAAAA;
+    }
+
+  </style>
+</head>
+<body>
+  <p><strong>Wiiiiiii</strong></p>
+  <p>Otro parrafo</p>
+  <script>
+  class Tutor {
+    constructor(nombre, apellido) {
+      this.nombre = nombre;
+      this.apellido = apellido;
+    }
+    saludar() {
+      console.log("Jola, soy: "+this.nombre);
+    }
+  }
+
+  Tutor.prototype.edad = 22;
+  var s1 = new Tutor("Nombre1", "Ap1");
+  s1.iniciar = function () {
+    console.log("Welcome");
+  }
+  var s2 = new Tutor("Nombre2", "Ap2");
+
+  console.log(s1.edad);
+  </script>
+</body>
+</html>

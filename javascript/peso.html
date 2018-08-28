@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peso en otros planetas</title>
+  <style>
+    body{
+      background-color: #AAAAFF;
+      color: white;
+      font-family: Helvetica;
+    }
+    strong{
+      background-color: #FFAAAA;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Tu peso en otro planeta</h1>
+
+  <script>
+    var gravedadTierra = 9.8;
+    var gravedadMarte = 3.7;
+    var gravedadJupiter = 24.8;
+    var peso = parseFloat(prompt("Cual es tu peso:"));
+    var opcion = parseInt(prompt("Elige un planeta:\n1: Marte\n2: Jupiter"))
+
+    if (opcion == 1) {
+      pesoMarte = (peso*gravedadMarte)/gravedadTierra;
+      pesoMarte = pesoMarte.toFixed(2);
+      document.write("Tu peso en Marte: <strong>"+pesoMarte+" Kg</strong>");
+    }
+    else if (opcion == 2){
+      pesoJupiter = (peso*gravedadJupiter)/gravedadTierra;
+      pesoJupiter = pesoJupiter.toFixed(2);
+      document.write("Tu peso en Jupiter: <strong>"+pesoJupiter+" Kg</strong>");
+    }
+    else {
+      document.write("Has escogido una opcion no valida");
+    }
+  </script>
+</body>
+</html>
